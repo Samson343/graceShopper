@@ -335,7 +335,7 @@ footer {
         width: 28vw;
     }
     .container {
-        margin-right: 35%;
+        margin-right: 32%;
         margin-top: 0vh;
     }
     .banner h2 {
@@ -343,7 +343,7 @@ footer {
     }
     .mountain {
         height: calc(60px + 14vmin);
-        margin-left: 30vw;
+        margin-left: 32vw;
         margin-top: 1vh;
 
     }
