@@ -307,6 +307,7 @@ footer {
 @media screen and (max-width:1189px) {
     .banner h2 {
         font-size: calc(15px + 13.5vmin);
+        /* line-height: 35vh; */
     }
     .mountain {
         height: calc(90px + 14vmin);
@@ -319,7 +320,7 @@ footer {
         width: 16vw;
     }
     .container {
-        margin-right: 20%;
+        margin-right: 22%;
         margin-top: 6vh;
     }
 
@@ -331,19 +332,19 @@ footer {
     } */
     .button {
         position: absolute;
-        width: 25vw;
+        width: 28vw;
     }
     .container {
-        margin-right: 45%;
-        margin-top: 6vh;
+        margin-right: 35%;
+        margin-top: 0vh;
     }
     .banner h2 {
-        font-size: calc(10px + 12.5vmin);
+        font-size: calc(9.5px + 12.5vmin);
     }
     .mountain {
-        height: calc(90px + 14vmin);
-        margin-left: 20vw;
-        margin-top: 5.8vh;
+        height: calc(60px + 14vmin);
+        margin-left: 30vw;
+        margin-top: 1vh;
 
     }
     /* .header, .footer {
