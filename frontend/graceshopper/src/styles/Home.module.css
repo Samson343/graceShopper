@@ -305,6 +305,17 @@
     background-size: cover; 
 }
 
+@media screen and (max-width:1500px) { 
+    .cardDeck {
+        padding: 0 4vw 0 4vw;
+      }
+       
+      .aboutCards {
+        flex: 0 0 calc(90%/4);
+        min-height: 75vh;
+      }
+}
+
 @media screen and (max-width:990px) { 
     .cardDeck {
       padding: 0 2vw 0 2vw;
@@ -329,7 +340,7 @@
   
   }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:550px) {
     .aboutCards {
         margin-left: 0vw;
         flex-basis: auto;
