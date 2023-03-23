@@ -66,7 +66,7 @@ function NavBar({ token, setTokenCheck, tokenCheck, setSingleProduct }) {
                 </li>
 
                 {
-                  (!token && loginDropdown)
+                  (!token || loginDropdown)
 
                     ?
 

@@ -8,7 +8,7 @@
     position:absolute;
     margin-left: 12vw;
     border-radius: 1.5%;
-    height: calc(100px + 16vh)
+    height: calc(90px + 16vmin)
     /* height: 256px */
     /* height: 25vh */
 }
@@ -37,7 +37,8 @@
     top: 0;
     width: 100%;
     height: 100%;
-    font-size: 20.65vh;
+    /* font-size: 20.65vmin; */
+    font-size: calc(50px + 14.2vmin);
     text-align: center;
     text-transform: uppercase;
     color: #000;
@@ -303,19 +304,49 @@ footer {
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1189px) {
+    .banner h2 {
+        font-size: calc(15px + 13.5vmin);
+    }
     .mountain {
-        display: none;
+        height: calc(90px + 14vmin);
+        margin-left: 18vw;
+        margin-top: 5.8vh;
+
     }
     .button {
         position: absolute;
-        width: 25vw;
-        margin-top: 12%;
+        width: 16vw;
     }
     .container {
-        margin-right: 25vw;
+        margin-right: 20%;
+        margin-top: 6vh;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    /* .mountain {
+        display: none;
+    } */
+    .button {
+        position: absolute;
+        width: 25vw;
+    }
+    .container {
+        margin-right: 45%;
+        margin-top: 6vh;
     }
     .banner h2 {
-        font-size: 16vh;
+        font-size: calc(10px + 12.5vmin);
     }
+    .mountain {
+        height: calc(90px + 14vmin);
+        margin-left: 20vw;
+        margin-top: 5.8vh;
+
+    }
+    /* .header, .footer {
+       height: 4vh;
+    } */
 }

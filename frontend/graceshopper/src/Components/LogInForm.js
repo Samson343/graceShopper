@@ -25,8 +25,10 @@ function LogInForm({ loginDropdown, setLoginDropdown, setTokenCheck, tokenCheck 
                         console.log('Submit Form')
                         await logIn({ username, password }).then(async (response) => {
                             alert(response.message)
+                            console.log("this is the response", response)
+                            console.log(!response.error)
 
-                            if (response.token) {
+                            if ((!response.error) === false) {
                                 setLoginDropdown(false)
                                 setTokenCheck(true)
                             }
