@@ -14,7 +14,7 @@ function LandingPage () {
     <div className={styles.mainDiv}>
       <header className={styles.header}></header>
       <div className={styles.banner}>
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsInline={true}>
             <source src="mixkit-landscape-of-a-large-lake-during-sunset-from-the-air-4998.mp4" type="video/mp4"/>
         </video>
         <h2 className = {styles.fadeIn}>Hike + Seek</h2>

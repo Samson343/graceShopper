@@ -11,7 +11,7 @@ function Banner ({ bannerText = '' }) {
     <div className={styles.mainDiv}>
       <header className={styles.header}></header>
       <div className={styles.banner}>
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsInline={true}>
             {/* A few different options for the background video */}
             {/* <source src="mixkit-landscape-of-a-large-lake-during-sunset-from-the-air-4998.mp4" type="video/mp4"/> */}
             {/* <source src="waterfallmp4.mp4" type="video/mp4"/> */}
