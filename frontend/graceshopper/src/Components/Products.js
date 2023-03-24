@@ -58,7 +58,7 @@ const Products = ({ token, itemProps, setItemProps, singleProduct, setSingleProd
               <select style={{display: "inline"}} onChange={(e) => {
                 setCategory(e.target.value)
               }} className={`form-select form-select-sm ${styles.selector}`} aria-label=".form-select-sm example">
-                <option defaultValue=''>Browse By Category</option>
+                <option defaultValue value=''>Browse By Category</option>
                 <option value="Shoes">Shoes</option>
                 <option value="Tents">Tents</option>
                 <option value="Clothing">Outdoor Clothing</option>
