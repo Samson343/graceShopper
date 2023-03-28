@@ -311,7 +311,7 @@
       }
        
       .aboutCards {
-        flex: 0 0 calc(90%/4);
+        flex: 0 0 calc(85%/4);
         min-height: 75vh;
       }
 }
