@@ -25,14 +25,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 98%;
+    padding-top: 1em;
     /* padding-left: 0.1%;
     padding-right: 0.1%; */
+    margin-left: 1.5%;
 }
 
 .productCard {
     border: 1px solid rgb(141, 141, 141);
     /* margin: 2em; */
-    margin: 1.6em;
+
+
+    margin: 1.8em 1.6em;
     color: rgb(82, 81, 81);
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 1px 1px 1px 1px rgb(11, 36, 8, 0.8);
@@ -142,4 +146,10 @@
     background-color: #EDE7E3;
     color: #16697a;
     border: 1px solid #16697a;
+}
+
+@media screen and (max-width:1600px) { 
+    .container {
+        margin-left: 1.2%;
+    }
 }
