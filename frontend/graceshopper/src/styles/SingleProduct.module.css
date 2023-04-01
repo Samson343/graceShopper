@@ -9,7 +9,7 @@
 .productDiv {
     border: 1px solid black;
     margin-bottom: 2.5em;
-    border-radius: 8px;
+    border-radius: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -136,3 +136,28 @@
     margin: 1.5em 0;
 
 }
+
+@media screen and (max-width:1600px) { 
+    .singleDiv {
+        margin-top: 4vmin;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .singleDiv {
+        margin: 4vmin 3vmin;
+    }
+    .image {
+        border-radius: 0px;
+    }
+    .titles {
+        text-align: left;
+        border-right: 2px solid rgb(190, 190, 190);
+        padding-right: 10px;
+    }
+    .size {
+        text-align: left;
+        border-right: none;
+    }
+
+ }

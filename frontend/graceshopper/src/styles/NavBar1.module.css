@@ -66,5 +66,11 @@
     .profileLi {
         display: none;
     }
-
 }
+
+@media screen and (max-width:550px) {
+   .mainBar {
+    max-height: 5%;
+   }
+
+ }

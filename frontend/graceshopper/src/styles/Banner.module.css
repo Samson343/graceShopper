@@ -28,12 +28,12 @@
     top: 0;
     width: 100%;
     height: 100%;
-    font-size: calc(10.5px + 5vmin);
+    font-size: calc(10.5px + 2.5vw);
     text-align: center;
     text-transform: uppercase;
     color: #000;
     /* use line-height if you want to adjust how far down the main text appears on the page */
-    line-height:75vh;
+    line-height:43vh;
     /* This single line is where the magic happens to make your text have a video bleed-through effect */
     mix-blend-mode: screen;
     font-family: 'Work Sans', sans-serif;
@@ -43,7 +43,17 @@
     /* a few different options with dramatic effects on the final animation, pure white seems to have the best effect */
     /* background: #e2d9d9;  */
     /* background: #ffffff; */
-    background: rgb(219, 216, 216, 0.7);
+    background: rgb(219, 216, 216, 0.85);
+    /* background: rgba(255, 255, 255); */
+    /* border: 15vh solid;
+    border-left: 20vw solid;
+    border-right: 20vw solid; */
+    border: 20vmin solid;
+    border-left: 20vw solid;
+    border-right: 20vw solid;
+    min-width: fit-content;
+    /* border-left: none;
+    border-right: none; */
 }
 
 .banner h4 {
@@ -75,9 +85,40 @@
     animation: fadeIn 7s 4s;
     animation-fill-mode: forwards;
 }
+
+.meetButton {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    mix-blend-mode: screen;
+}
+
+.exploreButton {
+    position: absolute;
+    margin-top: 10vh;
+    margin-right: 15vw;
+    mix-blend-mode: screen;
+}
+
 .mainDiv {
     /* margin-bottom: 10vh; */
 }
+
+@media screen and (max-width:1250px) { 
+    .banner h2 { 
+       border-top: 30vh solid;
+       border-bottom: 30vh solid;
+       border-left: 7vh solid;
+       border-right: 7vh solid;
+       line-height: 25vh;
+     }
+ }
+ @media screen and (max-width:600px) { 
+    .banner h2 { 
+        border-left: 0vh solid;
+        border-right: 0vh solid;
+    }
+  }
 
 @keyframes fadeIn {
     0%
