@@ -23,7 +23,7 @@ const Products = ({ token, itemProps, setItemProps, singleProduct, setSingleProd
       if (category) {
         let categoryItems = allProducts.filter(product => product.category === category)
         setProducts(categoryItems);
-        console.log(categoryItems)
+        
       }
       else {
         setProducts(allProducts)

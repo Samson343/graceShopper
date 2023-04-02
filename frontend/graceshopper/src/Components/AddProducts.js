@@ -38,7 +38,7 @@ const AddProducts = ({ token, products, setProducts }) => {
             image: image
 
           });
-          console.log("body", body)
+          
 
           try {
             const response = await fetch(`${BASEURL}/items/`, {
@@ -52,7 +52,7 @@ const AddProducts = ({ token, products, setProducts }) => {
             });
 
             const json = await response.json();
-            console.log("json", json);
+            
             if (json) {
               alert(`Product ${json.name} successfully created`)
             }

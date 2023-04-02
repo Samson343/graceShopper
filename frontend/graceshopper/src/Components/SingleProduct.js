@@ -13,20 +13,20 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
 
   useEffect(() => {
     const getCartItemAsync = async () => {
-      console.log("here!")
+      
       if (!token) {
         return
       }
       else {
-        console.log("down here!")
+       
         await getUserCart(token).then ((data) =>{
-        console.log(data)
+       
           if (data) {
             if (!('itemsInCart' in data)) {
               setItemsInCart([])
               setCartID(null)
             } else {
-              console.log('if (cart) success', data.itemsInCart)
+              
               setItemsInCart(data.itemsInCart)
               setCartID(data.id)
               setCartChange(false)
@@ -51,9 +51,7 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
         }
         return null
       })
-    } else {
-      console.log('no items in cart')
-    }
+    } 
   }, [itemsInCart, id])
 
   return (
@@ -126,7 +124,7 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
                       onClick={async (e) => {
                         const props = await getProductById(id);
                         setItemProps(props)
-                        console.log(itemProps)
+                        
                         setSingleProduct(false);
                       }}>
                     </i>
@@ -164,11 +162,10 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
 
                                   e.preventDefault();
                                   let decrementQuantity = cartItemQuantity - 1;
-                                  console.log('itemId is', id)
-                                  console.log('arguments are', id, cartID, decrementQuantity)
+                                  
                                   let updatedCartItem = await updateCartQuantity(id, cartID, decrementQuantity, token)
                                   setCartChange(true)
-                                  console.log('updated cart item is:', updatedCartItem)
+                                  
                                 }}></i>
                             }
 
@@ -182,7 +179,7 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
                                   let incrementQuantity = cartItemQuantity + 1;
                                   let updatedCartItem = await updateCartQuantity(id, cartID, incrementQuantity, token)
                                   setCartChange(true)
-                                  console.log('updated cart item is:', updatedCartItem)
+                                  
                                 }}></i>
 
                               :
@@ -203,7 +200,7 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
                               className={`bi bi-cart-plus-fill ${styles.cartIcon}`}
                               onClick={async (event) => {
                                 event.preventDefault();
-                                console.log('added to cart');
+                               
                                 await addToCart(id, token);
                                 // console.log('single product added to cart', test);
                                 setCartState(true)

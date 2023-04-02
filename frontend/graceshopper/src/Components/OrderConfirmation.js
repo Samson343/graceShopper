@@ -10,7 +10,6 @@ const OrderConfirmation = () => {
 
   let totalCartPrice = (orderItems) => {
     let cartPrice = 0;
-    console.log(orderItems)
     for (let i = 0; i < orderItems.length; ++i) {
       let itemPrice = Number(orderItems[i].price);
       let quantity = orderItems[i].quantity
