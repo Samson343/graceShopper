@@ -214,8 +214,9 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
 
 
                           :
-
-                          <p>Sold Out!</p>
+                           inventory <= 0 &&
+                            <p>Sold Out!</p>
+                          
                     }
 
                   </div>
