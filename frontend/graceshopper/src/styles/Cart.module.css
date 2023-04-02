@@ -2,6 +2,10 @@
     margin-bottom: 1em;
 }
 
+.hToThe2 {
+    font-size: calc(19px + 1vmin);
+}
+
 .productsLink:hover {
     text-decoration: underline;
 }
@@ -84,3 +88,22 @@
 .cartLabel {
     color: #16697A
 }
+
+@media screen and (max-width:550px) { 
+    .container {
+        padding: calc(10px + 1.75vmin);
+        font-size: calc(7.5px + 1.65vmin);
+    }
+    .priceAndIcons {
+        font-size: calc(7.5px + 1.65vmin);
+    }
+    .productsLink {
+        font-size: calc(6px + 1.65vmin);
+    }
+    .cartLabel { 
+        font-size: calc(7px + 1.65vmin);
+     }
+     .hToThe2 {
+        font-size: calc(7px + 2.2vmin);
+     }
+ }

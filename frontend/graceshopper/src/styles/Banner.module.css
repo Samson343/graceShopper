@@ -81,7 +81,7 @@
 /* These 2 classes and the animation are for the overlay fade-in for the button, banner, and mountain png */
 .fadeIn{
     opacity: 0%;
-    animation: fadeIn 7s 0.3s;
+    animation: fadeIn 5.9s 0.3s;
     animation-fill-mode: forwards;
 }
 

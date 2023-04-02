@@ -215,7 +215,7 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
 
                           :
 
-                          null
+                          <p>Sold Out!</p>
                     }
 
                   </div>

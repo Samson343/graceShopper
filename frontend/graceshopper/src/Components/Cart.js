@@ -45,16 +45,16 @@ const Cart = ({ token }) => {
 
         {itemsInCart.length < 1 ?
           <>
-            <h2>Your Cart Is Empty...For Now</h2>
-            <p className={`lead`}>
+            <h2 className={styles.hToThe2}>Your Cart Is Empty...For Now</h2>
+            <p className={`lead ${styles.productsLink}`}>
               <a className={`lead nav-link text-black ${styles.productsLink}`} 
-                href="products">Get Ready For Your Next Adventure Here!</a>
+                href="products"><span className ={`${styles.productsLink}`}>Get Ready For Your Next Adventure Here!</span></a>
             </p>
           </>
         :
           <>
-            <h2>You're almost ready to hit the great outdoors</h2>
-            <p class="lead">Be sure you didn't miss anything!</p>
+            <h2 className={styles.hToThe2}>You're almost ready to hit the great outdoors</h2>
+            <span className={styles.productsLink}>Be sure you didn't miss anything!</span>
           </>
         }
         

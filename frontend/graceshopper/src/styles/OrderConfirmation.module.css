@@ -102,7 +102,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (-width: 768px) {
     .ordercontainer {
         justify-content: center;
         align-items: center;
@@ -117,3 +117,37 @@
     }
 
 }
+
+@media screen and (max-width:600px) { 
+    .container {
+        padding: calc(10px + 1.75vmin)
+    }
+    .h1OrderReceived {
+        margin-top: calc(20px + 10vmin);
+        font-size: calc(10px + 2.1vmin);
+    }
+    .h1ThankYou {
+        font-size: calc(10px + 1.85vmin);
+    }
+    .pConfirmationNum {
+        margin-bottom: calc(10px + 1.2vmin);
+        padding-left: 3.5%;
+        font-size: calc(7.5px + 1.65vmin);
+        padding-right: 3.5%;
+    }
+    .itemHeader { 
+        font-size: calc(7px + 1.65vmin);
+
+     }
+     .imgCheckmark {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 60px;
+    }
+    .totalPrice {
+        font-size: calc(8px + 1.65vmin);
+    }
+    .priceHeader {
+        font-size: calc(8px + 1.65vmin);
+    }
+ }
