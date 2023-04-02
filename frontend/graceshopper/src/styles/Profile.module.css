@@ -8,14 +8,17 @@
 }
 .h1Profile {
     padding: 50px;
-    font-size: calc(12px + 2.4vmin);
+    font-size: calc(8px + 2.2vmin);
 }
 
 .h3 {
     padding-bottom: 60px;
     text-align: center;
-    font-size: calc(8px + 1.9vmin);
+    font-size: calc(4.5px + 1.3vmin);
     color: rgb(41, 79, 56);
+}
+.h4 {
+    font-size: calc(3.5px + 1.3vmin);
 }
 
 .h5 {
@@ -77,5 +80,6 @@
 .button {
     margin-bottom: 100px;
     margin-top: 20px;
+    font-size: calc(3.5px + 1.15vmin);
 }
 

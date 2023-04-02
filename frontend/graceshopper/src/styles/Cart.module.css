@@ -3,11 +3,14 @@
 }
 
 .hToThe2 {
-    font-size: calc(19px + 1vmin);
+    font-size: calc(13px + 1vmin);
 }
 
 .productsLink:hover {
     text-decoration: underline;
+}
+.productsLink {
+    font-size: calc(6px + 1vmin);
 }
 
 .priceAndIcons {
@@ -86,6 +89,7 @@
 }
 
 .cartLabel {
+    font-size: calc(8.5px + 1vmin);
     color: #16697A
 }
 

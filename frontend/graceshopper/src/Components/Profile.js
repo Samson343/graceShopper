@@ -44,10 +44,10 @@ const Profile = ({ token }) => {
 
   return (
     <div class={styles.mainContainer}>
-      <h1 class={styles.h1Profile}>My Profile</h1>
+      <h1 class={styles.h1Profile}>Previous Orders</h1>
       <h3 class={styles.h3}>Take a stroll down memory lane to see what awesome stuff you've already purchased</h3>
 
-      { orderHistory.length &&
+      { orderHistory.length ?
 
         orderHistory.map((order) => {
             // listOrderHistory()
@@ -110,6 +110,8 @@ const Profile = ({ token }) => {
             </ul>
           )
         })
+        :
+        <p className={styles.h4}>No orders yet!</p>
       }
       <Link to={'/products'}>
       <button className={`w-40 btn btn-warning btn-lg ${styles.button}`} type="submit">This way to more adventure...</button>
