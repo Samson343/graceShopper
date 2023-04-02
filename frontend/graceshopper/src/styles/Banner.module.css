@@ -28,7 +28,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    font-size: calc(9px + 2.5vw);
+    font-size: calc(19px + 1.94vw);
     text-align: center;
     text-transform: uppercase;
     color: #000;
@@ -56,8 +56,8 @@
     border-right: none; */
         border-top: 28vh solid;
         border-bottom: 32vh solid;
-        border-left: 15vh solid;
-        border-right: 15vh solid;
+        border-left: 17vh solid;
+        border-right: 17vh solid;
         line-height: 25vh;
 }
 
@@ -122,6 +122,7 @@
     .banner h2 { 
         border-left: 0vh solid;
         border-right: 0vh solid;
+        font-size: calc(11px + 1.94vw);
     }
   }
 
