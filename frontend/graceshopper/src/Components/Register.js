@@ -34,7 +34,7 @@ const Register = ({ token }) => {
                 
                 onSubmit={ (event) => {
                     event.preventDefault();
-                    console.log(username, password, email, address);
+                    
                     createAccount({username, password, email, address});
                     navigate("/home");
                     //^this redirects users to the home page after creating an account. 

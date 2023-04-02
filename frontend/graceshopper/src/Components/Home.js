@@ -42,7 +42,6 @@ const Home = ({ setItemProps, setSingleProduct, setCategory }) => {
 
   //grab all items, then pull out random products by their indexes while preventing duplicates (still occationally produces a single duplicate)
   useEffect(() => {
-    console.log("product gathering useEffect run")
 
     async function helper() {
       await getAllItems().then((items) => {
@@ -204,7 +203,6 @@ const Home = ({ setItemProps, setSingleProduct, setCategory }) => {
                         <Link onClick={() => {
                           setCategory(siteCategory)
                           setSingleProduct(false)
-                          console.log(siteCategory)
                         }} to="/products">
                           <div className={styles.description}>
                             <span className={styles.cardValue2}>
