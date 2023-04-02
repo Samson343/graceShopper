@@ -17,30 +17,7 @@ const Profile = ({ token }) => {
     })
   }, [token])
 
-//   function listOrderHistory() {
-    // line by line drill down accessing the order history details individually
-    // console.log('orderHistory[0]:', orderHistory[0])
-    // console.log('orderHistory[0].id:', orderHistory[0].id)
-    // console.log('orderHistory[0].itemsInCart:', orderHistory[0].itemsInCart)
-    // console.log('orderHistory[0].itemsInCart[0]:', orderHistory[0].itemsInCart[0])
-    // console.log('ITEM NAME IS: ', orderHistory[0].itemsInCart[0].name)
 
-    // for loop attempt
-    // for(let i = 0; i < orderHistory.length; i++) {
-    // console.log('ITEM NAME IS: ', orderHistory[0].itemsInCart[0].name);
-    // }
-
-    // hardcode attempt
-    // console.log('ITEM 1 NAME IS: ', orderHistory[0].itemsInCart[0].name)
-    // console.log('ITEM 2 NAME IS: ', orderHistory[0].itemsInCart[1].name)
-    // console.log('ITEM 3 NAME IS: ', orderHistory[2].itemsInCart[2].name)
-    // console.log('ITEM 4 NAME IS: ', orderHistory[3].itemsInCart[3].name)
-    // console.log('ITEM NAME IS: ', orderHistory[4].itemsInCart[4].name)
-    // console.log('ITEM NAME IS: ', orderHistory[5].itemsInCart[5].name)
- 
-//   }
-
-//   listOrderHistory()
 
   return (
     <div class={styles.mainContainer}>

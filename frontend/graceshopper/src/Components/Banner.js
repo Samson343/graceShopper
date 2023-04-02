@@ -18,7 +18,7 @@ function Banner ({ bannerText = '' }) {
             <source src="mountainVideo.mp4" type="video/mp4"/>
             
         </video>
-        <h2 className = {styles.fadeIn}>{bannerText ? bannerText : 'Gear up. get out.'}</h2>
+        <h2 className = {styles.fadeIn}>Gear up. Get out.</h2>
         {/* <button className= {styles.meetButton}>Meet the Team</button>
         <button className= {styles.exploreButton}>Explore Products</button> */}
       </div>
