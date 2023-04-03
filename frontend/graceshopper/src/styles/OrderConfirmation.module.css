@@ -18,14 +18,15 @@
 }
 
 .button {
-    margin-bottom: 20px;
+    margin-bottom: 50%;
 }
 
 /* line: our order has been received */
 .h1OrderReceived {
     font-weight: bold;
-    margin-top: 130px;
+    margin-top: 90px;
     margin-bottom: 90px;
+    font-size: calc(20px + 1.5vh);
 }
 
 /* checkmark img */
@@ -38,6 +39,7 @@
 /* line: Thank you for your purchase! */
 .h1ThankYou {
     margin-bottom: 50px;
+    font-size: calc(15px + 1vh);
 }
 
 /* line: Your order confirmation number is... */

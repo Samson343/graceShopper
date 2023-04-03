@@ -14,8 +14,9 @@
 .h3 {
     padding-bottom: 60px;
     text-align: center;
-    font-size: calc(4.5px + 1.3vmin);
+    font-size: calc(5px + 1.3vmin);
     color: rgb(41, 79, 56);
+    text-decoration: overline;
 }
 .h4 {
     font-size: calc(3.5px + 1.3vmin);
@@ -41,36 +42,42 @@
     margin-bottom: 10px;
     font-size:x-large;
     font-weight: 600;
+    font-size: calc(5px + 1.2vmin)
 }
 
 .liName {
     list-style: none;
     text-align: left;
     margin-left: 75px;
-    font-size: larger; 
+    font-size: larger;
+    font-size: calc(5px + 1vmin) 
 }
 
 .liBrand {
     list-style: none;
     text-align: left;
     margin-left: 100px;
+    font-size: calc(5px + 1vmin) 
 }
 
 .liSize{
     list-style: none;
     text-align: left;
     margin-left: 100px;
+    font-size: calc(5px + 1vmin) 
 }
 
 .liPrice {
     list-style: none;
     text-align: right;
     margin-right: 75px;
+    font-size: calc(5px + 1vmin) 
 }
 
 .liTotal {
     font-size: larger;
     font-weight: 600;
+    font-size: calc(5px + 1.1vmin) 
 }
 
 .li {
@@ -80,6 +87,6 @@
 .button {
     margin-bottom: 100px;
     margin-top: 20px;
-    font-size: calc(3.5px + 1.15vmin);
+    font-size: calc(8px + 0.5vmin);
 }
 
