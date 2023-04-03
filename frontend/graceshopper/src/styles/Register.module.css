@@ -38,3 +38,16 @@
   .registerForm {
     color: white;
 }
+
+@media screen and (max-width:550px) { 
+    .outterContainer {
+        font-size: small;
+    }
+    .pageTitle {
+        font-size: x-large;
+    }
+    .registerForm {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+ }

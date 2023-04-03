@@ -58,7 +58,7 @@ function SingleProduct({ setSingleProduct, itemProps, setItemProps, token, addTo
     <div className={styles.singleDiv}>
 
       <div className={`container ${styles.productContainer}`}>
-        <h5 class="display-5">{brand} {name}</h5>
+        <h5 className={`display-5`}><span className ={styles.topTitle}>{brand} {name}</span></h5>
         <div className={`row ${styles.productDiv}`}>
 
           {/* this is a parent div */}

@@ -232,7 +232,7 @@
 }
 
 .aboutCards {
-    flex: 0 0 calc(78%/4);
+    flex: 0 0 calc(75%/4);
     margin-left: 0vw;
     max-height: 80vmin;
     min-height: 70vmin;
@@ -366,7 +366,7 @@
         justify-content: space-between;
         align-content: space-between;
         background: transparent;
-        font-size: calc(6px + 0.95vmin);
+        font-size: calc(6.5px + 0.95vmin);
     }
     .homeDiv {
         min-height: 440vh;

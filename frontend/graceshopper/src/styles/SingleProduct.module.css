@@ -6,6 +6,10 @@
     margin-top: 10px;
 }
 
+.topTitle { 
+    font-size: calc(25px + 1.75vmin)
+ }
+
 .productDiv {
     border: 1px solid black;
     margin-bottom: 2.5em;
@@ -71,13 +75,13 @@
 .deleteIcon,
 .arrowIcon,
 .quantIcons {
-    font-size: calc(8px + 2.5vmin);
+    font-size: calc(8px + 2vmin);
     transition: transform 0.25s, color 0.25s;
 }
 
 .count {
     margin-bottom: 4px;
-    font-size: calc(8px + 3vmin);
+    font-size: calc(8px + 2vmin);
 }
 
 .cartIcon,
@@ -159,5 +163,25 @@
         text-align: left;
         border-right: none;
     }
+    .cartIcon,
+    .deleteIcon,
+    .arrowIcon,
+    .quantIcons {
+    font-size: calc(7px + 2.5vmin);
+    transition: transform 0.25s, color 0.25s;
+}
+.deleteIcon {
+    margin-left: 27px;
+}
+.titles { 
+    font-size: large;
+ }
+ .descText {
+    font-weight: 300;
+    font-size: medium;
+}
+.topTitle {
+    font-size: calc(18px + 2.6vmin);
+}
 
  }

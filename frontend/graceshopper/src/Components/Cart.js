@@ -2,6 +2,7 @@ import {React, useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getUserCart, deleteItemFromCart, updateCartQuantity, checkoutCart } from '../api/cartRequests';
 import styles from '../styles/Cart.module.css'
+import { Link } from 'react-router-dom';
 
 const Cart = ({ token }) => {
   const [itemsInCart, setItemsInCart] = useState([]);
@@ -47,8 +48,8 @@ const Cart = ({ token }) => {
           <>
             <h2 className={styles.hToThe2}>Your Cart Is Empty...For Now</h2>
             <p className={`lead ${styles.productsLink}`}>
-              <a className={`lead nav-link text-black ${styles.productsLink}`} 
-                href="products"><span className ={`${styles.productsLink}`}>Get Ready For Your Next Adventure Here!</span></a>
+              <Link className={`lead nav-link text-black ${styles.productsLink}`} 
+                to="/products"><span className ={`${styles.productsLink}`}>Get Ready For Your Next Adventure Here!</span></Link>
             </p>
           </>
         :
