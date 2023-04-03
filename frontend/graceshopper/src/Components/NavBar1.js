@@ -21,7 +21,7 @@ function NavBar({ token, setTokenCheck, tokenCheck, setSingleProduct }) {
           <div className={styles.TitleandIcon}>
             <Link
               className={`navbar-brand text-white ${styles.title}`}
-              to = '/home'>Hike & Seek</Link>
+              to = '/home'><span className= {styles.title}>Hike & Seek</span></Link>
             <a
               class="navbar-brand"
               href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
@@ -79,7 +79,7 @@ function NavBar({ token, setTokenCheck, tokenCheck, setSingleProduct }) {
                       </Link>
 
                       <ul className={`dropdown-menu dropdown-menu-lg-end ${styles.dropdown}`}>
-                        <li>
+                        <li >
                           <LogInForm
                             loginDropdown={loginDropdown}
                             setLoginDropdown={setLoginDropdown}
@@ -97,7 +97,7 @@ function NavBar({ token, setTokenCheck, tokenCheck, setSingleProduct }) {
                         type="button"
                         className={`btn text-white ${styles.logOut}`}
                         onClick={async (event) => {
-                          console.log('logout!');
+                          
                           await logOut().then(() => {
           
                             setLoginDropdown(true)
